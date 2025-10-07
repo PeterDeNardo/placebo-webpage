@@ -116,10 +116,39 @@
   * {
     @apply border-border outline-ring/50;
   }
-  html {
-    scrollbar-gutter: stable;
-  }
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Esconde scrollbar mas mantém funcionalidade de scroll */
+/* Firefox */
+html {
+  scrollbar-width: none;
+}
+
+body {
+  scrollbar-width: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+html::-webkit-scrollbar {
+  display: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+*::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: transparent;
 }

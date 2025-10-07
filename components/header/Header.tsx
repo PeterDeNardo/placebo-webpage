@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import headerData from "../../Data/headerData.json";
 import {
@@ -26,12 +26,57 @@ const { leftNavigation, rightNavigation } = headerData as HeaderData;
 
 const Header = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const [visible, setVisible] = useState(true);
+  const lastScrollY = useRef(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      
+      // Define se o header deve ter background sólido (após 50px)
+      setScrolled(currentScrollY > 50);
+      
+      // Define se o header deve estar visível
+      if (currentScrollY < 10) {
+        // No topo, sempre visível
+        setVisible(true);
+      } else if (currentScrollY > lastScrollY.current && currentScrollY > 80) {
+        // Scrollando para baixo e passou de 80px - esconde
+        setVisible(false);
+      } else if (currentScrollY < lastScrollY.current) {
+        // Scrollando para cima - mostra
+        setVisible(true);
+      }
+      
+      lastScrollY.current = currentScrollY;
+    };
+
+    // Adiciona listener de scroll
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    // Checa posição inicial
+    handleScroll();
+
+    // Cleanup
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <>
-      <header className="fixed top-0 left-0 z-50 flex w-full items-center justify-between bg-white px-12 py-10 border-b">
+      <header 
+        className={`fixed left-0 z-50 flex w-full items-center justify-between px-12 py-10 transition-all duration-300 ${
+          scrolled 
+            ? "bg-white/95 backdrop-blur-md border-b border-border/40 shadow-sm" 
+            : "bg-transparent border-b border-transparent"
+        } ${
+          visible ? "top-0" : "-top-32"
+        }`}
+      >
       {/* Navegação Esquerda */}
-      <nav className="flex gap-6 text-base">
+      <nav className={`flex gap-6 text-base transition-colors duration-300 ${
+        scrolled ? "text-foreground" : "text-white drop-shadow-lg"
+      }`}>
         <NavigationMenu>
           <NavigationMenuList>
             {leftNavigation.map((item) => (
@@ -51,38 +96,44 @@ const Header = () => {
       </nav>
 
       {/* Logo Central */}
-      <div className="font-bold text-2xl absolute left-1/2 transform -translate-x-1/2">
+      <div className={`font-bold text-2xl absolute left-1/2 transform -translate-x-1/2 transition-colors duration-300 ${
+        scrolled ? "text-foreground" : "text-white drop-shadow-lg"
+      }`}>
         <Link href="/" className="hover:opacity-80 transition-opacity">
           Placebo
         </Link>
       </div>
 
       {/* Navegação Direita */}
-      <nav className="flex items-center gap-6 text-base">
+      <nav className={`flex items-center gap-6 text-base transition-colors duration-300 ${
+        scrolled ? "text-foreground" : "text-white drop-shadow-lg"
+      }`}>
         <NavigationMenu>
           <NavigationMenuList>
             {rightNavigation.map((item) => (
               <NavigationMenuItem key={item.route}>
                 {item.route === "/search" ? (
-                  <button
-                    onClick={() => setIsSearchOpen(true)}
-                    className="flex flex-row items-center gap-2 hover:text-primary transition-colors"
-                  >
-                    <svg
-                      className="w-4 h-4 flex-shrink-0"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
+                  <NavigationMenuLink asChild>
+                    <button
+                      onClick={() => setIsSearchOpen(true)}
+                      className="flex flex-row items-center gap-2 cursor-pointer"
                     >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                      />
-                    </svg>
-                    <span>{item.title}</span>
-                  </button>
+                      <svg
+                        className="w-4 h-4 flex-shrink-0"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                        />
+                      </svg>
+                      <span>{item.title}</span>
+                    </button>
+                  </NavigationMenuLink>
                 ) : (
                   <NavigationMenuLink asChild>
                     <Link 

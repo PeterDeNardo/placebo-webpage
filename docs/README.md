@@ -10,6 +10,10 @@ Bem-vindo à documentação completa do projeto Placebo Webpage.
   - Estrutura do JSON
   - Exemplos práticos
   - Troubleshooting
+- [**HEADER_SCROLL_EFFECT.md**](./HEADER_SCROLL_EFFECT.md) - Efeito de scroll do Header
+  - Header translúcido
+  - Transições suaves
+  - Configuração e customização
 
 ### 📡 Backend e API
 - [**API_ENDPOINTS.md**](./API_ENDPOINTS.md) - Documentação dos endpoints
