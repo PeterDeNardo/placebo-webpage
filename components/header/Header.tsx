@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import headerData from "../../Data/headerData.json";
 import {
   NavigationMenu,
@@ -25,6 +26,9 @@ type HeaderData = {
 const { leftNavigation, rightNavigation } = headerData as HeaderData;
 
 const Header = () => {
+  const pathname = usePathname();
+  const isHomePage = pathname === '/';
+  
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [visible, setVisible] = useState(true);
@@ -66,16 +70,20 @@ const Header = () => {
     <>
       <header 
         className={`fixed left-0 z-50 flex w-full items-center justify-between px-12 py-10 transition-all duration-300 ${
-          scrolled 
-            ? "bg-white/95 backdrop-blur-md border-b border-border/40 shadow-sm" 
-            : "bg-transparent border-b border-transparent"
+          isHomePage
+            ? scrolled 
+              ? "bg-white/95 backdrop-blur-md border-b border-border/40 shadow-sm" 
+              : "bg-transparent border-b border-transparent"
+            : "bg-white border-b border-border/40 shadow-sm"
         } ${
           visible ? "top-0" : "-top-32"
         }`}
       >
       {/* Navegação Esquerda */}
       <nav className={`flex gap-6 text-base transition-colors duration-300 ${
-        scrolled ? "text-foreground" : "text-white drop-shadow-lg"
+        isHomePage
+          ? scrolled ? "text-foreground" : "text-white drop-shadow-lg"
+          : "text-foreground"
       }`}>
         <NavigationMenu>
           <NavigationMenuList>
@@ -97,7 +105,9 @@ const Header = () => {
 
       {/* Logo Central */}
       <div className={`font-bold text-2xl absolute left-1/2 transform -translate-x-1/2 transition-colors duration-300 ${
-        scrolled ? "text-foreground" : "text-white drop-shadow-lg"
+        isHomePage
+          ? scrolled ? "text-foreground" : "text-white drop-shadow-lg"
+          : "text-foreground"
       }`}>
         <Link href="/" className="hover:opacity-80 transition-opacity">
           Placebo
@@ -106,7 +116,9 @@ const Header = () => {
 
       {/* Navegação Direita */}
       <nav className={`flex items-center gap-6 text-base transition-colors duration-300 ${
-        scrolled ? "text-foreground" : "text-white drop-shadow-lg"
+        isHomePage
+          ? scrolled ? "text-foreground" : "text-white drop-shadow-lg"
+          : "text-foreground"
       }`}>
         <NavigationMenu>
           <NavigationMenuList>

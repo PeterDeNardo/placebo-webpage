@@ -1,0 +1,33 @@
+{
+  "id": 3,
+  "title": "Camiseta Premium de Algodão",
+  "description": "Camiseta confeccionada em 100% algodão egípcio de alta qualidade. Design minimalista e confortável, perfeita para o dia a dia. Corte moderno que valoriza o corpo.",
+  "price": 89.90,
+  "currency": "BRL",
+  "media": {
+    "type": "image",
+    "url": "https://picsum.photos/800/1000?random=20",
+    "alt": "Camiseta Premium de Algodão"
+  },
+  "features": [
+    "100% algodão egípcio penteado",
+    "Toque macio e respirável",
+    "Corte moderno e ajustado",
+    "Reforço duplo nas costuras",
+    "Resiste a múltiplas lavagens",
+    "Certificação sustentável"
+  ],
+  "specifications": {
+    "Marca": "Urban Basic",
+    "Referência": "TB-001",
+    "Cor": "Preto",
+    "Tamanho": "M",
+    "Material": "100% Algodão Egípcio",
+    "Gramatura": "180g/m²",
+    "Lavagem": "Máquina até 30°C",
+    "Origem": "Brasil"
+  },
+  "stock": true,
+  "category": "Roupas"
+}
+

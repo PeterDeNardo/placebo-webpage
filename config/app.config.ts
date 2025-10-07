@@ -25,6 +25,7 @@ export const appConfig = {
   // Endpoints
   CAROUSELS_ENDPOINT: '/carousels',
   HERO_ENDPOINT: '/hero',
+  PRODUCTS_ENDPOINT: '/products',
   
   // Variáveis para debug
   NODE_ENV: process.env.NODE_ENV,

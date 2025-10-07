@@ -1,0 +1,34 @@
+{
+  "id": 4,
+  "title": "Tênis Casual Couro Premium",
+  "description": "Tênis casual confeccionado em couro genuíno premium. Design atemporal e versátil que combina com diversos estilos. Solado de borracha antiderrapante e palmilha anatômica para máximo conforto.",
+  "price": 349.90,
+  "currency": "BRL",
+  "media": {
+    "type": "image",
+    "url": "https://picsum.photos/800/1000?random=21",
+    "alt": "Tênis Casual Couro Premium"
+  },
+  "features": [
+    "Couro genuíno de alta qualidade",
+    "Palmilha anatômica removível",
+    "Solado de borracha antiderrapante",
+    "Forro interno respirável",
+    "Acabamento artesanal",
+    "Design minimalista e versátil"
+  ],
+  "specifications": {
+    "Marca": "Classic Steps",
+    "Referência": "CS-2024",
+    "Cor": "Branco Off-White",
+    "Tamanho": "42 BR",
+    "Material": "Couro Bovino Premium",
+    "Solado": "Borracha Natural",
+    "Altura": "Baixo",
+    "Forro": "Tecido Respirável",
+    "Garantia": "6 meses"
+  },
+  "stock": true,
+  "category": "Calçados"
+}
+

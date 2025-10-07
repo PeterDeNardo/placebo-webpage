@@ -1,0 +1,33 @@
+{
+  "id": 1,
+  "title": "Moletom Canguru Preto",
+  "description": "Moletom canguru confeccionado em moletom premium com felpa interna macia. Possui capuz ajustável e bolso frontal tipo canguru. Design atemporal e versátil que combina com qualquer look casual.",
+  "price": 249.90,
+  "currency": "BRL",
+  "media": {
+    "type": "image",
+    "url": "https://picsum.photos/800/1000?random=1",
+    "alt": "Moletom Canguru Preto"
+  },
+  "features": [
+    "Moletom premium com felpa",
+    "Capuz ajustável com cordão",
+    "Bolso canguru frontal",
+    "Punhos e barra em ribana",
+    "Não desbota",
+    "Conforto térmico"
+  ],
+  "specifications": {
+    "Marca": "Urban Comfort",
+    "Referência": "UC-002",
+    "Cor": "Preto",
+    "Tamanho": "M",
+    "Material": "80% Algodão, 20% Poliéster",
+    "Gramatura": "320g/m²",
+    "Modelagem": "Regular",
+    "Lavagem": "Máquina 30°C"
+  },
+  "stock": true,
+  "category": "Vestuário"
+}
+

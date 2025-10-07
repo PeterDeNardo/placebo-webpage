@@ -1,0 +1,32 @@
+{
+  "id": 1,
+  "title": "Camiseta Oversized Preta",
+  "description": "Camiseta oversized confeccionada em 100% algodão premium. Design minimalista e moderno com caimento amplo e confortável. Perfeita para um visual urbano e despojado.",
+  "price": 129.90,
+  "currency": "BRL",
+  "media": {
+    "type": "image",
+    "url": "https://picsum.photos/800/1000?random=1",
+    "alt": "Camiseta Oversized Preta"
+  },
+  "features": [
+    "100% algodão premium",
+    "Modelagem oversized",
+    "Gola reforçada",
+    "Costura dupla",
+    "Toque macio",
+    "Não desbota"
+  ],
+  "specifications": {
+    "Marca": "Urban Street",
+    "Referência": "US-001",
+    "Cor": "Preto",
+    "Tamanho": "G",
+    "Material": "100% Algodão",
+    "Gramatura": "200g/m²",
+    "Modelagem": "Oversized",
+    "Lavagem": "Máquina 30°C"
+  },
+  "stock": true,
+  "category": "Vestuário"
+}

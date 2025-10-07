@@ -9,7 +9,7 @@
           "description": "High-quality noise-cancelling headphones with superior sound quality and long battery life.",
           "value": 299.99,
           "image": "https://picsum.photos/200/300?random=1",
-          "route": "/products/wireless-headphones"
+          "route": "/product/1"
         },
         {
           "id": 2,
@@ -17,7 +17,7 @@
           "description": "Track your health and fitness goals with advanced sensors and GPS tracking capabilities.",
           "value": 199.99,
           "image": "https://picsum.photos/200/300?random=2",
-          "route": "/products/fitness-watch"
+          "route": "/product/2"
         },
         {
           "id": 3,
@@ -25,7 +25,7 @@
           "description": "20000mAh fast-charging power bank with dual USB ports and compact design.",
           "value": 49.99,
           "image": "https://picsum.photos/200/300?random=3",
-          "route": "/products/power-bank"
+          "route": "/product/3"
         },
         {
           "id": 4,
@@ -33,7 +33,7 @@
           "description": "Adjustable lumbar support and breathable mesh design for all-day comfort.",
           "value": 399.99,
           "image": "https://picsum.photos/200/300?random=4",
-          "route": "/products/office-chair"
+          "route": "/product/4"
         },
         {
           "id": 9,
@@ -41,7 +41,7 @@
           "description": "Professional 4K webcam with auto-focus and built-in ring light for crystal-clear video calls.",
           "value": 149.99,
           "image": "https://picsum.photos/200/300?random=9",
-          "route": "/products/webcam"
+          "route": "/product/9"
         }
       ]
     },
@@ -54,7 +54,7 @@
           "description": "Waterproof action camera with image stabilization and voice control features.",
           "value": 349.99,
           "image": "https://picsum.photos/200/300?random=5",
-          "route": "/products/action-camera"
+          "route": "/product/5"
         },
         {
           "id": 6,
@@ -62,7 +62,7 @@
           "description": "RGB backlit mechanical keyboard with customizable keys and programmable macros.",
           "value": 129.99,
           "image": "https://picsum.photos/200/300?random=6",
-          "route": "/products/gaming-keyboard"
+          "route": "/product/6"
         },
         {
           "id": 7,
@@ -70,7 +70,7 @@
           "description": "Fast wireless charging pad compatible with all Qi-enabled devices.",
           "value": 34.99,
           "image": "https://picsum.photos/200/300?random=7",
-          "route": "/products/wireless-charger"
+          "route": "/product/7"
         },
         {
           "id": 8,
@@ -78,7 +78,7 @@
           "description": "Portable waterproof speaker with 360-degree sound and 12-hour battery life.",
           "value": 79.99,
           "image": "https://picsum.photos/200/300?random=8",
-          "route": "/products/bluetooth-speaker"
+          "route": "/product/8"
         },
         {
           "id": 10,
@@ -86,7 +86,7 @@
           "description": "Adjustable brightness and color temperature with USB charging port and touch controls.",
           "value": 59.99,
           "image": "https://picsum.photos/200/300?random=10",
-          "route": "/products/desk-lamp"
+          "route": "/product/10"
         }
       ]
     }

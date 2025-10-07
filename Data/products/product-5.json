@@ -1,0 +1,33 @@
+{
+  "id": 5,
+  "title": "Jaqueta Jeans Oversized",
+  "description": "Jaqueta jeans oversized com lavagem especial stonewashed. Design atemporal e versátil que nunca sai de moda. Perfeita para compor looks casuais e despojados.",
+  "price": 399.90,
+  "currency": "BRL",
+  "media": {
+    "type": "image",
+    "url": "https://picsum.photos/800/1000?random=5",
+    "alt": "Jaqueta Jeans Oversized"
+  },
+  "features": [
+    "Jeans 100% algodão",
+    "Lavagem stonewashed",
+    "Modelagem oversized",
+    "Bolsos frontais e internos",
+    "Botões metálicos",
+    "Durabilidade premium"
+  ],
+  "specifications": {
+    "Marca": "Denim Co",
+    "Referência": "DC-005",
+    "Cor": "Azul Médio",
+    "Tamanho": "M",
+    "Material": "100% Algodão Denim",
+    "Peso": "450g/m²",
+    "Modelagem": "Oversized",
+    "Lavagem": "Máquina 30°C"
+  },
+  "stock": true,
+  "category": "Vestuário"
+}
+

@@ -1,0 +1,33 @@
+{
+  "id": 2,
+  "title": "Calça Cargo Bege",
+  "description": "Calça cargo moderna e funcional com múltiplos bolsos. Confeccionada em sarja resistente de alta qualidade. Design urbano que combina estilo e praticidade para o dia a dia.",
+  "price": 289.90,
+  "currency": "BRL",
+  "media": {
+    "type": "image",
+    "url": "https://picsum.photos/800/1000?random=2",
+    "alt": "Calça Cargo Bege"
+  },
+  "features": [
+    "Sarja de alta qualidade",
+    "6 bolsos funcionais",
+    "Ajuste na cintura",
+    "Resistente e durável",
+    "Corte moderno",
+    "Não amassa"
+  ],
+  "specifications": {
+    "Marca": "Urban Utility",
+    "Referência": "UU-003",
+    "Cor": "Bege",
+    "Tamanho": "42",
+    "Material": "100% Algodão Sarja",
+    "Modelagem": "Regular Fit",
+    "Bolsos": "6 unidades",
+    "Lavagem": "Máquina 40°C"
+  },
+  "stock": true,
+  "category": "Vestuário"
+}
+
