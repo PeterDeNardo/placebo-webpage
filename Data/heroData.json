@@ -1,0 +1,25 @@
+{
+  "enabled": true,
+  "mediaType": "image",
+  "mediaSrc": "https://picsum.photos/1920/1080?random=hero",
+  "videoFormat": "mp4",
+  "posterImage": null,
+  "overlayOpacity": 40,
+  "content": {
+    "title": "Placebo",
+    "subtitle": "Descubra o estilo que define você",
+    "buttons": [
+      {
+        "text": "Ver Novidades",
+        "href": "/novidades",
+        "variant": "primary"
+      },
+      {
+        "text": "Explorar Coleção",
+        "href": "/roupas",
+        "variant": "outline"
+      }
+    ]
+  },
+  "showScrollIndicator": true
+}

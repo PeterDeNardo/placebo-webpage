@@ -1,0 +1,46 @@
+{
+  "leftNavigation": [
+    {
+      "title": "Novidades",
+      "route": "/novidades",
+      "description": "Últimas novidades e lançamentos"
+    },
+    {
+      "title": "Marcas",
+      "route": "/marcas",
+      "description": "Nossas marcas parceiras"
+    },
+    {
+      "title": "Roupas",
+      "route": "/roupas",
+      "description": "Catálogo de roupas"
+    },
+    {
+      "title": "Encomendas",
+      "route": "/encomendas",
+      "description": "Monitor echo system performance and statistics."
+    },
+    {
+      "title": "Importados ",
+      "route": "/importados",
+      "description": "Monitor echo system performance and statistics."
+    }
+  ],
+  "rightNavigation": [
+    {
+      "title": "Pesquisar",
+      "route": "/search",
+      "description": "Conheça nossa história"
+    },
+    {
+      "title": "Blog",
+      "route": "/blog",
+      "description": "Monitor echo system performance and statistics."
+    },
+    {
+      "title": "Carrinho",
+      "route": "/cart",
+      "description": "Ver carrinho de compras"
+    }
+  ]
+}

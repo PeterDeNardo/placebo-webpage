@@ -1,0 +1,94 @@
+{
+  "carousels": [
+    {
+      "title": "Featured Products",
+      "products": [
+        {
+          "id": 1,
+          "title": "Premium Wireless Headphones",
+          "description": "High-quality noise-cancelling headphones with superior sound quality and long battery life.",
+          "value": 299.99,
+          "image": "https://picsum.photos/200/300?random=1",
+          "route": "/products/wireless-headphones"
+        },
+        {
+          "id": 2,
+          "title": "Smart Fitness Watch",
+          "description": "Track your health and fitness goals with advanced sensors and GPS tracking capabilities.",
+          "value": 199.99,
+          "image": "https://picsum.photos/200/300?random=2",
+          "route": "/products/fitness-watch"
+        },
+        {
+          "id": 3,
+          "title": "Portable Power Bank",
+          "description": "20000mAh fast-charging power bank with dual USB ports and compact design.",
+          "value": 49.99,
+          "image": "https://picsum.photos/200/300?random=3",
+          "route": "/products/power-bank"
+        },
+        {
+          "id": 4,
+          "title": "Ergonomic Office Chair",
+          "description": "Adjustable lumbar support and breathable mesh design for all-day comfort.",
+          "value": 399.99,
+          "image": "https://picsum.photos/200/300?random=4",
+          "route": "/products/office-chair"
+        },
+        {
+          "id": 9,
+          "title": "Ultra HD Webcam",
+          "description": "Professional 4K webcam with auto-focus and built-in ring light for crystal-clear video calls.",
+          "value": 149.99,
+          "image": "https://picsum.photos/200/300?random=9",
+          "route": "/products/webcam"
+        }
+      ]
+    },
+    {
+      "title": "New Arrivals",
+      "products": [
+        {
+          "id": 5,
+          "title": "4K Action Camera",
+          "description": "Waterproof action camera with image stabilization and voice control features.",
+          "value": 349.99,
+          "image": "https://picsum.photos/200/300?random=5",
+          "route": "/products/action-camera"
+        },
+        {
+          "id": 6,
+          "title": "Mechanical Gaming Keyboard",
+          "description": "RGB backlit mechanical keyboard with customizable keys and programmable macros.",
+          "value": 129.99,
+          "image": "https://picsum.photos/200/300?random=6",
+          "route": "/products/gaming-keyboard"
+        },
+        {
+          "id": 7,
+          "title": "Wireless Phone Charger",
+          "description": "Fast wireless charging pad compatible with all Qi-enabled devices.",
+          "value": 34.99,
+          "image": "https://picsum.photos/200/300?random=7",
+          "route": "/products/wireless-charger"
+        },
+        {
+          "id": 8,
+          "title": "Bluetooth Speaker",
+          "description": "Portable waterproof speaker with 360-degree sound and 12-hour battery life.",
+          "value": 79.99,
+          "image": "https://picsum.photos/200/300?random=8",
+          "route": "/products/bluetooth-speaker"
+        },
+        {
+          "id": 10,
+          "title": "Smart LED Desk Lamp",
+          "description": "Adjustable brightness and color temperature with USB charging port and touch controls.",
+          "value": 59.99,
+          "image": "https://picsum.photos/200/300?random=10",
+          "route": "/products/desk-lamp"
+        }
+      ]
+    }
+  ]
+}
