@@ -44,29 +44,32 @@ export default function CategoryPage() {
       const categoryPath = slug.join('/');
 
       if (appConfig.USE_LOCAL_DATA) {
-        // Fallback para dados locais
+        // Usa dados locais em desenvolvimento
+        console.log('📁 Categoria: Usando dados locais:', categoryPath);
         try {
           const localData = await import(`@/Data/categories/${categoryPath}.json`);
           setData(localData.default);
         } catch (err) {
-          console.error("Error loading local data:", err);
+          console.error("❌ Erro ao carregar dados locais:", err);
           setError(true);
         }
       } else {
-        // Buscar do backend
+        // Busca do backend em produção
+        const apiUrl = `${appConfig.API_BASE_URL}${appConfig.CATEGORIES_ENDPOINT}/${categoryPath}`;
+        console.log('🌐 Categoria: Buscando da API:', apiUrl);
+        
         try {
-          const response = await fetch(
-            `${appConfig.API_BASE_URL}${appConfig.CATEGORIES_ENDPOINT}/${categoryPath}`
-          );
+          const response = await fetch(apiUrl);
 
           if (!response.ok) {
-            throw new Error("Failed to fetch data");
+            throw new Error(`HTTP error! status: ${response.status}`);
           }
 
           const result = await response.json();
           setData(result);
+          console.log('✅ Categoria: Dados carregados com sucesso');
         } catch (err) {
-          console.error("Error fetching data:", err);
+          console.error("❌ Erro ao buscar da API:", err);
           setError(true);
         }
       }
