@@ -65,9 +65,9 @@
       "description": "Monitor echo system performance and statistics."
     },
     {
-      "title": "Importados ",
-      "route": "/importados",
-      "description": "Monitor echo system performance and statistics."
+      "title": "Importados",
+      "route": "/categoria/importados",
+      "description": "Produtos importados exclusivos"
     }
   ],
   "rightNavigation": [
@@ -80,6 +80,18 @@
       "title": "Blog",
       "route": "/blog",
       "description": "Monitor echo system performance and statistics."
+    },
+    {
+      "title": "Login",
+      "route": "/login",
+      "description": "Entre na sua conta",
+      "authRequired": false
+    },
+    {
+      "title": "Sua Área",
+      "route": "/account",
+      "description": "Área do cliente",
+      "authRequired": true
     },
     {
       "title": "Carrinho",

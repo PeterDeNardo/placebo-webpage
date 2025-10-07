@@ -1,0 +1,86 @@
+{
+  "title": "Importados",
+  "products": [
+    {
+      "id": "importado-1",
+      "title": "Supreme Box Logo Hoodie",
+      "description": "Moletom icônico importado direto dos EUA",
+      "price": 899.90,
+      "image": "https://picsum.photos/seed/import1/400/500",
+      "route": "/product/importado-1"
+    },
+    {
+      "id": "importado-2",
+      "title": "Bape Shark Hoodie",
+      "description": "Moletom japonês com design exclusivo",
+      "price": 1299.90,
+      "image": "https://picsum.photos/seed/import2/400/500",
+      "route": "/product/importado-2"
+    },
+    {
+      "id": "importado-3",
+      "title": "Off-White Industrial Belt",
+      "description": "Cinto industrial importado da Europa",
+      "price": 449.90,
+      "image": "https://picsum.photos/seed/import3/400/500",
+      "route": "/product/importado-3"
+    },
+    {
+      "id": "importado-4",
+      "title": "Yeezy Boost 350 V2",
+      "description": "Tênis importado com tecnologia Boost",
+      "price": 1799.90,
+      "image": "https://picsum.photos/seed/import4/400/500",
+      "route": "/product/importado-4"
+    },
+    {
+      "id": "importado-5",
+      "title": "Stussy Basic Tee",
+      "description": "Camiseta californiana streetwear",
+      "price": 349.90,
+      "image": "https://picsum.photos/seed/import5/400/500",
+      "route": "/product/importado-5"
+    },
+    {
+      "id": "importado-6",
+      "title": "Palace Tri-Ferg Deck",
+      "description": "Shape de skate importado do UK",
+      "price": 599.90,
+      "image": "https://picsum.photos/seed/import6/400/500",
+      "route": "/product/importado-6"
+    },
+    {
+      "id": "importado-7",
+      "title": "Fear of God Essentials",
+      "description": "Conjunto completo linha Essentials",
+      "price": 1499.90,
+      "image": "https://picsum.photos/seed/import7/400/500",
+      "route": "/product/importado-7"
+    },
+    {
+      "id": "importado-8",
+      "title": "Travis Scott Cactus Jack",
+      "description": "Camiseta colaboração Travis Scott",
+      "price": 499.90,
+      "image": "https://picsum.photos/seed/import8/400/500",
+      "route": "/product/importado-8"
+    },
+    {
+      "id": "importado-9",
+      "title": "KITH Box Logo Crewneck",
+      "description": "Moletom sem capuz nova-iorquino",
+      "price": 799.90,
+      "image": "https://picsum.photos/seed/import9/400/500",
+      "route": "/product/importado-9"
+    },
+    {
+      "id": "importado-10",
+      "title": "Anti Social Social Club",
+      "description": "Hoodie rosa importado dos EUA",
+      "price": 699.90,
+      "image": "https://picsum.photos/seed/import10/400/500",
+      "route": "/product/importado-10"
+    }
+  ]
+}
+

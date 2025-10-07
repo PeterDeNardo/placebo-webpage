@@ -26,6 +26,7 @@ type HeaderItem = {
   route: string;
   description: string;
   submenu?: SubMenuItem[];
+  authRequired?: boolean;
 };
 
 type HeaderData = {
@@ -42,7 +43,20 @@ const Header = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [visible, setVisible] = useState(true);
+  const [isAuthenticated, setIsAuthenticated] = useState(false); // TODO: Integrar com sistema de auth
   const lastScrollY = useRef(0);
+
+  // TODO: Integração com sistema de autenticação
+  // useEffect(() => {
+  //   const checkAuth = async () => {
+  //     const token = localStorage.getItem('authToken');
+  //     if (token) {
+  //       // Validar token com backend
+  //       setIsAuthenticated(true);
+  //     }
+  //   };
+  //   checkAuth();
+  // }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -167,7 +181,16 @@ const Header = () => {
       }`}>
         <NavigationMenu>
           <NavigationMenuList>
-            {rightNavigation.map((item) => (
+            {rightNavigation
+              .filter((item) => {
+                // Mostra Login se não estiver autenticado
+                if (item.route === "/login") return !isAuthenticated;
+                // Mostra Sua Área se estiver autenticado
+                if (item.route === "/account") return isAuthenticated;
+                // Mostra todos os outros itens
+                return true;
+              })
+              .map((item) => (
               <NavigationMenuItem key={item.route}>
                 {item.route === "/search" ? (
                   <NavigationMenuLink asChild>
