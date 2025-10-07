@@ -14,6 +14,7 @@ import {
   NavigationMenuContent,
 } from "@/components/ui/navigation-menu";
 import SearchOverlay from "@/components/SearchOverlay";
+import AuthModal from "@/components/AuthModal";
 
 type SubMenuItem = {
   title: string;
@@ -41,6 +42,7 @@ const Header = () => {
   const isHomePage = pathname === '/';
   
   const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [isAuthOpen, setIsAuthOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [visible, setVisible] = useState(true);
   const [isAuthenticated, setIsAuthenticated] = useState(false); // TODO: Integrar com sistema de auth
@@ -57,6 +59,12 @@ const Header = () => {
   //   };
   //   checkAuth();
   // }, []);
+
+  const handleLoginSuccess = () => {
+    setIsAuthenticated(true);
+    // TODO: Salvar token no localStorage
+    // localStorage.setItem('authToken', token);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -214,6 +222,15 @@ const Header = () => {
                       <span>{item.title}</span>
                     </button>
                   </NavigationMenuLink>
+                ) : item.route === "/login" ? (
+                  <NavigationMenuLink asChild>
+                    <button
+                      onClick={() => setIsAuthOpen(true)}
+                      className="hover:text-primary transition-colors cursor-pointer"
+                    >
+                      {item.title}
+                    </button>
+                  </NavigationMenuLink>
                 ) : (
                   <NavigationMenuLink asChild>
                     <Link 
@@ -232,6 +249,11 @@ const Header = () => {
     </header>
 
     <SearchOverlay isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
+    <AuthModal 
+      isOpen={isAuthOpen} 
+      onClose={() => setIsAuthOpen(false)}
+      onLoginSuccess={handleLoginSuccess}
+    />
     </>
   );
 };
