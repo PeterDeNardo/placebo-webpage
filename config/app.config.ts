@@ -20,12 +20,13 @@ export const appConfig = {
     : isDevelopment, // ← Automático baseado no ambiente
   
   // URL da API (configure via variável de ambiente em produção)
-  API_URL: process.env.NEXT_PUBLIC_API_URL || 'https://api.example.com',
+  API_BASE_URL: process.env.NEXT_PUBLIC_API_URL || 'https://api.example.com',
   
   // Endpoints
   CAROUSELS_ENDPOINT: '/carousels',
   HERO_ENDPOINT: '/hero',
   PRODUCTS_ENDPOINT: '/products',
+  CATEGORIES_ENDPOINT: '/categories',
   
   // Variáveis para debug
   NODE_ENV: process.env.NODE_ENV,

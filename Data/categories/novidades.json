@@ -1,0 +1,70 @@
+{
+  "title": "Novidades",
+  "products": [
+    {
+      "id": "1",
+      "title": "Moletom Oversized Preto",
+      "description": "Moletom oversized com capuz, estilo urbano e confortável",
+      "price": 189.90,
+      "image": "https://picsum.photos/seed/novidade1/400/500",
+      "route": "/product/1"
+    },
+    {
+      "id": "2",
+      "title": "Calça Cargo Bege",
+      "description": "Calça cargo com múltiplos bolsos, perfeita para o dia a dia",
+      "price": 159.90,
+      "image": "https://picsum.photos/seed/novidade2/400/500",
+      "route": "/product/2"
+    },
+    {
+      "id": "3",
+      "title": "Camiseta Básica Branca",
+      "description": "Camiseta 100% algodão, corte regular",
+      "price": 79.90,
+      "image": "https://picsum.photos/seed/novidade3/400/500",
+      "route": "/product/3"
+    },
+    {
+      "id": "4",
+      "title": "Tênis Urbano Preto",
+      "description": "Tênis casual com design moderno e confortável",
+      "price": 299.90,
+      "image": "https://picsum.photos/seed/novidade4/400/500",
+      "route": "/product/4"
+    },
+    {
+      "id": "5",
+      "title": "Jaqueta Jeans Azul",
+      "description": "Jaqueta jeans clássica com lavagem escura",
+      "price": 249.90,
+      "image": "https://picsum.photos/seed/novidade5/400/500",
+      "route": "/product/5"
+    },
+    {
+      "id": "6",
+      "title": "Shorts Moletom Cinza",
+      "description": "Shorts confortável em moletom premium",
+      "price": 89.90,
+      "image": "https://picsum.photos/seed/novidade6/400/500",
+      "route": "/product/6"
+    },
+    {
+      "id": "7",
+      "title": "Camisa Social Preta",
+      "description": "Camisa social slim fit em tecido premium",
+      "price": 149.90,
+      "image": "https://picsum.photos/seed/novidade7/400/500",
+      "route": "/product/7"
+    },
+    {
+      "id": "8",
+      "title": "Boné Snapback Preto",
+      "description": "Boné ajustável com aba reta",
+      "price": 69.90,
+      "image": "https://picsum.photos/seed/novidade8/400/500",
+      "route": "/product/8"
+    }
+  ]
+}
+

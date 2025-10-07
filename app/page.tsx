@@ -74,7 +74,7 @@ export default function Home() {
       }
       
       // Faz fetch da API
-      const heroUrl = `${appConfig.API_URL}${appConfig.HERO_ENDPOINT}`;
+      const heroUrl = `${appConfig.API_BASE_URL}${appConfig.HERO_ENDPOINT}`;
       console.log('🌐 Hero: Buscando da API:', heroUrl);
       
       const response = await fetch(heroUrl);
@@ -110,7 +110,7 @@ export default function Home() {
       }
       
       // Faz fetch da API
-      const carouselsUrl = `${appConfig.API_URL}${appConfig.CAROUSELS_ENDPOINT}`;
+      const carouselsUrl = `${appConfig.API_BASE_URL}${appConfig.CAROUSELS_ENDPOINT}`;
       console.log('🌐 Carrosséis: Buscando da API:', carouselsUrl);
       
       const response = await fetch(carouselsUrl);

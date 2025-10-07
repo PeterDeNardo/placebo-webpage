@@ -1,0 +1,46 @@
+{
+  "title": "Calças",
+  "products": [
+    {
+      "id": "calca-1",
+      "title": "Calça Cargo Bege",
+      "description": "Calça cargo com múltiplos bolsos",
+      "price": 159.90,
+      "image": "https://picsum.photos/seed/calca1/400/500",
+      "route": "/product/2"
+    },
+    {
+      "id": "calca-2",
+      "title": "Calça Jeans Slim",
+      "description": "Calça jeans com corte slim fit",
+      "price": 189.90,
+      "image": "https://picsum.photos/seed/calca2/400/500",
+      "route": "/product/calca-2"
+    },
+    {
+      "id": "calca-3",
+      "title": "Calça Jogger Preta",
+      "description": "Calça jogger em moletom premium",
+      "price": 139.90,
+      "image": "https://picsum.photos/seed/calca3/400/500",
+      "route": "/product/calca-3"
+    },
+    {
+      "id": "calca-4",
+      "title": "Calça Alfaiataria Cinza",
+      "description": "Calça social em tecido premium",
+      "price": 249.90,
+      "image": "https://picsum.photos/seed/calca4/400/500",
+      "route": "/product/calca-4"
+    },
+    {
+      "id": "calca-5",
+      "title": "Calça Jeans Wide Leg",
+      "description": "Calça jeans com modelagem ampla",
+      "price": 199.90,
+      "image": "https://picsum.photos/seed/calca5/400/500",
+      "route": "/product/calca-5"
+    }
+  ]
+}
+

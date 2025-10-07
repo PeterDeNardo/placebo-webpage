@@ -1,0 +1,46 @@
+{
+  "title": "Jaquetas",
+  "products": [
+    {
+      "id": "jaqueta-1",
+      "title": "Jaqueta Jeans Azul",
+      "description": "Jaqueta jeans clássica com lavagem escura",
+      "price": 249.90,
+      "image": "https://picsum.photos/seed/jaqueta1/400/500",
+      "route": "/product/5"
+    },
+    {
+      "id": "jaqueta-2",
+      "title": "Jaqueta Bomber Preta",
+      "description": "Jaqueta bomber em nylon",
+      "price": 299.90,
+      "image": "https://picsum.photos/seed/jaqueta2/400/500",
+      "route": "/product/jaqueta-2"
+    },
+    {
+      "id": "jaqueta-3",
+      "title": "Jaqueta Corta-Vento Verde",
+      "description": "Jaqueta impermeável com capuz",
+      "price": 269.90,
+      "image": "https://picsum.photos/seed/jaqueta3/400/500",
+      "route": "/product/jaqueta-3"
+    },
+    {
+      "id": "jaqueta-4",
+      "title": "Jaqueta de Couro Marrom",
+      "description": "Jaqueta em couro sintético premium",
+      "price": 449.90,
+      "image": "https://picsum.photos/seed/jaqueta4/400/500",
+      "route": "/product/jaqueta-4"
+    },
+    {
+      "id": "jaqueta-5",
+      "title": "Jaqueta Puffer Preta",
+      "description": "Jaqueta puffer com enchimento térmico",
+      "price": 399.90,
+      "image": "https://picsum.photos/seed/jaqueta5/400/500",
+      "route": "/product/jaqueta-5"
+    }
+  ]
+}
+

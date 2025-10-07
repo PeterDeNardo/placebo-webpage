@@ -1,0 +1,54 @@
+{
+  "title": "Acessórios",
+  "products": [
+    {
+      "id": "acessorio-1",
+      "title": "Boné Snapback Preto",
+      "description": "Boné ajustável com aba reta",
+      "price": 69.90,
+      "image": "https://picsum.photos/seed/acessorio1/400/500",
+      "route": "/product/8"
+    },
+    {
+      "id": "acessorio-2",
+      "title": "Meia Esportiva Kit 3 pares",
+      "description": "Kit com 3 pares de meias esportivas",
+      "price": 49.90,
+      "image": "https://picsum.photos/seed/acessorio2/400/500",
+      "route": "/product/acessorio-2"
+    },
+    {
+      "id": "acessorio-3",
+      "title": "Cinto de Couro Preto",
+      "description": "Cinto clássico em couro sintético",
+      "price": 89.90,
+      "image": "https://picsum.photos/seed/acessorio3/400/500",
+      "route": "/product/acessorio-3"
+    },
+    {
+      "id": "acessorio-4",
+      "title": "Mochila Urbana Preta",
+      "description": "Mochila com compartimento para notebook",
+      "price": 159.90,
+      "image": "https://picsum.photos/seed/acessorio4/400/500",
+      "route": "/product/acessorio-4"
+    },
+    {
+      "id": "acessorio-5",
+      "title": "Óculos de Sol",
+      "description": "Óculos de sol com proteção UV400",
+      "price": 129.90,
+      "image": "https://picsum.photos/seed/acessorio5/400/500",
+      "route": "/product/acessorio-5"
+    },
+    {
+      "id": "acessorio-6",
+      "title": "Cachecol de Lã Cinza",
+      "description": "Cachecol em lã sintética macia",
+      "price": 79.90,
+      "image": "https://picsum.photos/seed/acessorio6/400/500",
+      "route": "/product/acessorio-6"
+    }
+  ]
+}
+

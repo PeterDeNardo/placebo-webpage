@@ -1,0 +1,46 @@
+{
+  "title": "Puma",
+  "products": [
+    {
+      "id": "puma-1",
+      "title": "Puma Suede Classic",
+      "description": "Tênis de camurça clássico e atemporal",
+      "price": 449.90,
+      "image": "https://picsum.photos/seed/puma1/400/500",
+      "route": "/product/puma-1"
+    },
+    {
+      "id": "puma-2",
+      "title": "Puma Essential Logo Tee",
+      "description": "Camiseta básica com logo Puma",
+      "price": 99.90,
+      "image": "https://picsum.photos/seed/puma2/400/500",
+      "route": "/product/puma-2"
+    },
+    {
+      "id": "puma-3",
+      "title": "Puma Athletics Moletom",
+      "description": "Moletom esportivo com tecnologia warmCELL",
+      "price": 299.90,
+      "image": "https://picsum.photos/seed/puma3/400/500",
+      "route": "/product/puma-3"
+    },
+    {
+      "id": "puma-4",
+      "title": "Puma RS-X",
+      "description": "Tênis chunky com design futurista",
+      "price": 699.90,
+      "image": "https://picsum.photos/seed/puma4/400/500",
+      "route": "/product/puma-4"
+    },
+    {
+      "id": "puma-5",
+      "title": "Puma Active Shorts",
+      "description": "Shorts esportivo com tecnologia dryCELL",
+      "price": 149.90,
+      "image": "https://picsum.photos/seed/puma5/400/500",
+      "route": "/product/puma-5"
+    }
+  ]
+}
+

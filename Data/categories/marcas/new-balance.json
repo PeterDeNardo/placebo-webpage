@@ -1,0 +1,46 @@
+{
+  "title": "New Balance",
+  "products": [
+    {
+      "id": "nb-1",
+      "title": "New Balance 574 Core",
+      "description": "Tênis clássico com design icônico",
+      "price": 549.90,
+      "image": "https://picsum.photos/seed/nb1/400/500",
+      "route": "/product/nb-1"
+    },
+    {
+      "id": "nb-2",
+      "title": "New Balance Essential Tee",
+      "description": "Camiseta básica com logo NB",
+      "price": 119.90,
+      "image": "https://picsum.photos/seed/nb2/400/500",
+      "route": "/product/nb-2"
+    },
+    {
+      "id": "nb-3",
+      "title": "New Balance Athletics Hoodie",
+      "description": "Moletom com capuz em algodão premium",
+      "price": 379.90,
+      "image": "https://picsum.photos/seed/nb3/400/500",
+      "route": "/product/nb-3"
+    },
+    {
+      "id": "nb-4",
+      "title": "New Balance 990v5",
+      "description": "Tênis premium feito nos EUA",
+      "price": 1299.90,
+      "image": "https://picsum.photos/seed/nb4/400/500",
+      "route": "/product/nb-4"
+    },
+    {
+      "id": "nb-5",
+      "title": "New Balance Sport Shorts",
+      "description": "Shorts esportivo com ajuste confortável",
+      "price": 169.90,
+      "image": "https://picsum.photos/seed/nb5/400/500",
+      "route": "/product/nb-5"
+    }
+  ]
+}
+

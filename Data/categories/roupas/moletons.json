@@ -1,0 +1,46 @@
+{
+  "title": "Moletons",
+  "products": [
+    {
+      "id": "moletom-1",
+      "title": "Moletom Oversized Preto",
+      "description": "Moletom oversized com capuz",
+      "price": 189.90,
+      "image": "https://picsum.photos/seed/moletom1/400/500",
+      "route": "/product/1"
+    },
+    {
+      "id": "moletom-2",
+      "title": "Moletom Básico Cinza",
+      "description": "Moletom básico sem capuz",
+      "price": 149.90,
+      "image": "https://picsum.photos/seed/moletom2/400/500",
+      "route": "/product/moletom-2"
+    },
+    {
+      "id": "moletom-3",
+      "title": "Moletom Zip-Up Preto",
+      "description": "Moletom com zíper frontal completo",
+      "price": 199.90,
+      "image": "https://picsum.photos/seed/moletom3/400/500",
+      "route": "/product/moletom-3"
+    },
+    {
+      "id": "moletom-4",
+      "title": "Moletom Estampado",
+      "description": "Moletom com estampa exclusiva",
+      "price": 209.90,
+      "image": "https://picsum.photos/seed/moletom4/400/500",
+      "route": "/product/moletom-4"
+    },
+    {
+      "id": "moletom-5",
+      "title": "Moletom Cropped Branco",
+      "description": "Moletom cropped feminino",
+      "price": 169.90,
+      "image": "https://picsum.photos/seed/moletom5/400/500",
+      "route": "/product/moletom-5"
+    }
+  ]
+}
+

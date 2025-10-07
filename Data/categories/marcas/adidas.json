@@ -1,0 +1,46 @@
+{
+  "title": "Adidas",
+  "products": [
+    {
+      "id": "adidas-1",
+      "title": "Adidas Superstar",
+      "description": "Tênis icônico com as três listras",
+      "price": 599.90,
+      "image": "https://picsum.photos/seed/adidas1/400/500",
+      "route": "/product/adidas-1"
+    },
+    {
+      "id": "adidas-2",
+      "title": "Adidas Originals Camiseta",
+      "description": "Camiseta clássica com logo trefoil",
+      "price": 149.90,
+      "image": "https://picsum.photos/seed/adidas2/400/500",
+      "route": "/product/adidas-2"
+    },
+    {
+      "id": "adidas-3",
+      "title": "Adidas Essentials Moletom",
+      "description": "Moletom confortável para o dia a dia",
+      "price": 329.90,
+      "image": "https://picsum.photos/seed/adidas3/400/500",
+      "route": "/product/adidas-3"
+    },
+    {
+      "id": "adidas-4",
+      "title": "Adidas Ultraboost",
+      "description": "Tênis de corrida com tecnologia Boost",
+      "price": 899.90,
+      "image": "https://picsum.photos/seed/adidas4/400/500",
+      "route": "/product/adidas-4"
+    },
+    {
+      "id": "adidas-5",
+      "title": "Adidas Tiro Track Pants",
+      "description": "Calça de treino com listras laterais",
+      "price": 249.90,
+      "image": "https://picsum.photos/seed/adidas5/400/500",
+      "route": "/product/adidas-5"
+    }
+  ]
+}
+

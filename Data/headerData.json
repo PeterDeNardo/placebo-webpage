@@ -2,60 +2,60 @@
   "leftNavigation": [
     {
       "title": "Novidades",
-      "route": "/novidades",
+      "route": "/categoria/novidades",
       "description": "Últimas novidades e lançamentos"
     },
     {
       "title": "Marcas",
-      "route": "/marcas",
+      "route": "/categoria/marcas",
       "description": "Nossas marcas parceiras",
       "submenu": [
         {
           "title": "Nike",
-          "route": "/marcas/nike",
+          "route": "/categoria/marcas/nike",
           "icon": "/icons/nike.svg"
         },
         {
           "title": "Adidas",
-          "route": "/marcas/adidas",
+          "route": "/categoria/marcas/adidas",
           "icon": "/icons/adidas.svg"
         },
         {
           "title": "Puma",
-          "route": "/marcas/puma",
+          "route": "/categoria/marcas/puma",
           "icon": "/icons/puma.svg"
         },
         {
           "title": "New Balance",
-          "route": "/marcas/new-balance",
+          "route": "/categoria/marcas/new-balance",
           "icon": "/icons/new-balance.svg"
         }
       ]
     },
     {
       "title": "Roupas",
-      "route": "/roupas",
+      "route": "/categoria/roupas",
       "description": "Catálogo de roupas",
       "submenu": [
         {
           "title": "Camisetas",
-          "route": "/roupas/camisetas"
+          "route": "/categoria/roupas/camisetas"
         },
         {
           "title": "Calças",
-          "route": "/roupas/calcas"
+          "route": "/categoria/roupas/calcas"
         },
         {
           "title": "Moletons",
-          "route": "/roupas/moletons"
+          "route": "/categoria/roupas/moletons"
         },
         {
           "title": "Jaquetas",
-          "route": "/roupas/jaquetas"
+          "route": "/categoria/roupas/jaquetas"
         },
         {
           "title": "Acessórios",
-          "route": "/roupas/acessorios"
+          "route": "/categoria/roupas/acessorios"
         }
       ]
     },

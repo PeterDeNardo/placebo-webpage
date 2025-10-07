@@ -1,0 +1,54 @@
+{
+  "title": "Camisetas",
+  "products": [
+    {
+      "id": "camiseta-1",
+      "title": "Camiseta Oversized Preta",
+      "description": "Camiseta oversized em algodão premium",
+      "price": 89.90,
+      "image": "https://picsum.photos/seed/camiseta1/400/500",
+      "route": "/product/3"
+    },
+    {
+      "id": "camiseta-2",
+      "title": "Camiseta Básica Branca",
+      "description": "Camiseta básica 100% algodão",
+      "price": 79.90,
+      "image": "https://picsum.photos/seed/camiseta2/400/500",
+      "route": "/product/camiseta-2"
+    },
+    {
+      "id": "camiseta-3",
+      "title": "Camiseta Estampada",
+      "description": "Camiseta com estampa exclusiva",
+      "price": 99.90,
+      "image": "https://picsum.photos/seed/camiseta3/400/500",
+      "route": "/product/camiseta-3"
+    },
+    {
+      "id": "camiseta-4",
+      "title": "Camiseta Longline Cinza",
+      "description": "Camiseta longline com corte alongado",
+      "price": 109.90,
+      "image": "https://picsum.photos/seed/camiseta4/400/500",
+      "route": "/product/camiseta-4"
+    },
+    {
+      "id": "camiseta-5",
+      "title": "Camiseta Listrada",
+      "description": "Camiseta com listras horizontais",
+      "price": 94.90,
+      "image": "https://picsum.photos/seed/camiseta5/400/500",
+      "route": "/product/camiseta-5"
+    },
+    {
+      "id": "camiseta-6",
+      "title": "Camiseta Polo Azul",
+      "description": "Camiseta polo em algodão piquê",
+      "price": 129.90,
+      "image": "https://picsum.photos/seed/camiseta6/400/500",
+      "route": "/product/camiseta-6"
+    }
+  ]
+}
+

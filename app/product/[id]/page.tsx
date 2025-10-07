@@ -47,7 +47,7 @@ export default function ProductPage() {
         }
 
         // Faz fetch da API
-        const productUrl = `${appConfig.API_URL}/products/${params.id}`;
+        const productUrl = `${appConfig.API_BASE_URL}/products/${params.id}`;
         console.log('🌐 Produto: Buscando da API:', productUrl);
 
         const response = await fetch(productUrl);
