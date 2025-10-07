@@ -8,12 +8,56 @@
     {
       "title": "Marcas",
       "route": "/marcas",
-      "description": "Nossas marcas parceiras"
+      "description": "Nossas marcas parceiras",
+      "submenu": [
+        {
+          "title": "Nike",
+          "route": "/marcas/nike",
+          "icon": "/icons/nike.svg"
+        },
+        {
+          "title": "Adidas",
+          "route": "/marcas/adidas",
+          "icon": "/icons/adidas.svg"
+        },
+        {
+          "title": "Puma",
+          "route": "/marcas/puma",
+          "icon": "/icons/puma.svg"
+        },
+        {
+          "title": "New Balance",
+          "route": "/marcas/new-balance",
+          "icon": "/icons/new-balance.svg"
+        }
+      ]
     },
     {
       "title": "Roupas",
       "route": "/roupas",
-      "description": "Catálogo de roupas"
+      "description": "Catálogo de roupas",
+      "submenu": [
+        {
+          "title": "Camisetas",
+          "route": "/roupas/camisetas"
+        },
+        {
+          "title": "Calças",
+          "route": "/roupas/calcas"
+        },
+        {
+          "title": "Moletons",
+          "route": "/roupas/moletons"
+        },
+        {
+          "title": "Jaquetas",
+          "route": "/roupas/jaquetas"
+        },
+        {
+          "title": "Acessórios",
+          "route": "/roupas/acessorios"
+        }
+      ]
     },
     {
       "title": "Encomendas",

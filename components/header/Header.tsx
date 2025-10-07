@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import headerData from "../../Data/headerData.json";
 import {
@@ -9,13 +10,22 @@ import {
   NavigationMenuList,
   NavigationMenuItem,
   NavigationMenuLink,
+  NavigationMenuTrigger,
+  NavigationMenuContent,
 } from "@/components/ui/navigation-menu";
 import SearchOverlay from "@/components/SearchOverlay";
+
+type SubMenuItem = {
+  title: string;
+  route: string;
+  icon?: string;
+};
 
 type HeaderItem = {
   title: string;
   route: string;
   description: string;
+  submenu?: SubMenuItem[];
 };
 
 type HeaderData = {
@@ -89,14 +99,49 @@ const Header = () => {
           <NavigationMenuList>
             {leftNavigation.map((item) => (
               <NavigationMenuItem key={item.route}>
-                <NavigationMenuLink asChild>
-                  <Link 
-                    href={item.route}
-                    className="hover:text-primary transition-colors"
-                  >
-                    {item.title}
-                  </Link>
-                </NavigationMenuLink>
+                {item.submenu ? (
+                  <>
+                    <NavigationMenuTrigger className="hover:text-primary transition-colors bg-transparent">
+                      {item.title}
+                    </NavigationMenuTrigger>
+                    <NavigationMenuContent>
+                      <ul className="flex flex-col w-[200px] p-2">
+                        {item.submenu.map((subItem) => (
+                          <li key={subItem.route}>
+                            <NavigationMenuLink asChild>
+                              <Link
+                                href={subItem.route}
+                                className="flex flex-row items-center gap-3 select-none rounded-md px-3 py-2 no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                              >
+                                {subItem.icon && (
+                                  <div className="relative w-5 h-5 flex-shrink-0">
+                                    <Image
+                                      src={subItem.icon}
+                                      alt={subItem.title}
+                                      fill
+                                      className="object-contain"
+                                      unoptimized
+                                    />
+                                  </div>
+                                )}
+                                <span className="text-sm font-medium whitespace-nowrap">{subItem.title}</span>
+                              </Link>
+                            </NavigationMenuLink>
+                          </li>
+                        ))}
+                      </ul>
+                    </NavigationMenuContent>
+                  </>
+                ) : (
+                  <NavigationMenuLink asChild>
+                    <Link 
+                      href={item.route}
+                      className="hover:text-primary transition-colors"
+                    >
+                      {item.title}
+                    </Link>
+                  </NavigationMenuLink>
+                )}
               </NavigationMenuItem>
             ))}
           </NavigationMenuList>
