@@ -1,5 +1,12 @@
 {
   "title": "Novidades",
+  "hero": {
+    "enabled": true,
+    "title": "Últimas Novidades",
+    "description": "Descubra as peças mais recentes e exclusivas da nossa coleção",
+    "mediaType": "image",
+    "mediaSrc": "https://picsum.photos/seed/novidades-hero/1920/600"
+  },
   "products": [
     {
       "id": "1",

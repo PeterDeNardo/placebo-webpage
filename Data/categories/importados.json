@@ -1,5 +1,12 @@
 {
   "title": "Importados",
+  "hero": {
+    "enabled": true,
+    "title": "Produtos Importados",
+    "description": "Marcas exclusivas e produtos únicos de todo o mundo",
+    "mediaType": "image",
+    "mediaSrc": "https://picsum.photos/seed/importados-hero/1920/600"
+  },
   "products": [
     {
       "id": "importado-1",

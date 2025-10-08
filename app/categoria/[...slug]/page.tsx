@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
+import CategoryHero from "@/components/CategoryHero";
 import ProductGrid from "@/components/ProductGrid";
 import ProductGridSkeleton from "@/components/ProductGridSkeleton";
 import EmptyState from "@/components/EmptyState";
@@ -18,8 +19,19 @@ type Product = {
   route: string;
 };
 
+type HeroData = {
+  enabled: boolean;
+  title: string;
+  description?: string;
+  mediaType?: "image" | "video";
+  mediaSrc?: string;
+  videoFormat?: string;
+  posterImage?: string | null;
+};
+
 type CategoryData = {
   title: string;
+  hero?: HeroData;
   products: Product[];
 };
 
@@ -91,26 +103,49 @@ export default function CategoryPage() {
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
-      <main className="flex-1 pt-32">
-        {loading && <ProductGridSkeleton />}
+      <main className="flex-1">
+        {loading && (
+          <>
+            <div className="h-32" /> {/* Spacer for fixed header */}
+            <ProductGridSkeleton />
+          </>
+        )}
         {error && (
-          <EmptyState
-            message="Erro ao carregar produtos"
-            description="Não foi possível carregar os produtos. Tente novamente."
-            type="error"
-            onRetry={handleRetry}
-          />
+          <>
+            <div className="h-32" /> {/* Spacer for fixed header */}
+            <EmptyState
+              message="Erro ao carregar produtos"
+              description="Não foi possível carregar os produtos. Tente novamente."
+              type="error"
+              onRetry={handleRetry}
+            />
+          </>
         )}
         {!loading && !error && data && (
           <>
-            {data.products.length === 0 ? (
-              <EmptyState
-                message="Nenhum produto encontrado"
-                description="Não há produtos disponíveis nesta categoria no momento."
-                type="empty"
+            {/* Hero Section */}
+            {data.hero?.enabled && (
+              <CategoryHero
+                title={data.hero.title}
+                description={data.hero.description}
+                mediaType={data.hero.mediaType}
+                mediaSrc={data.hero.mediaSrc}
+                videoFormat={data.hero.videoFormat}
+                posterImage={data.hero.posterImage}
               />
+            )}
+            
+            {/* Products Grid */}
+            {data.products.length === 0 ? (
+              <div className={data.hero?.enabled ? "" : "pt-32"}>
+                <EmptyState
+                  message="Nenhum produto encontrado"
+                  description="Não há produtos disponíveis nesta categoria no momento."
+                  type="empty"
+                />
+              </div>
             ) : (
-              <ProductGrid products={data.products} title={data.title} />
+              <ProductGrid products={data.products} title={data.hero?.enabled ? undefined : data.title} />
             )}
           </>
         )}

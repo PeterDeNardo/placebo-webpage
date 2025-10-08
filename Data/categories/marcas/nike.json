@@ -1,5 +1,12 @@
 {
   "title": "Nike",
+  "hero": {
+    "enabled": true,
+    "title": "Nike",
+    "description": "Just Do It - Performance e estilo para o seu dia a dia",
+    "mediaType": "image",
+    "mediaSrc": "https://picsum.photos/seed/nike-hero/1920/600"
+  },
   "products": [
     {
       "id": "nike-1",
