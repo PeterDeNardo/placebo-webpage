@@ -1,5 +1,12 @@
 {
   "title": "Puma",
+  "hero": {
+    "enabled": true,
+    "title": "Puma",
+    "description": "Forever Faster - Velocidade, estilo e inovação",
+    "mediaType": "image",
+    "mediaSrc": "https://picsum.photos/seed/puma-hero/1920/600"
+  },
   "products": [
     {
       "id": "puma-1",

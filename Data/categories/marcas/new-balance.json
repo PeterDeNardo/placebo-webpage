@@ -1,5 +1,12 @@
 {
   "title": "New Balance",
+  "hero": {
+    "enabled": true,
+    "title": "New Balance",
+    "description": "Fearlessly Independent - Qualidade e autenticidade desde 1906",
+    "mediaType": "image",
+    "mediaSrc": "https://picsum.photos/seed/newbalance-hero/1920/600"
+  },
   "products": [
     {
       "id": "nb-1",

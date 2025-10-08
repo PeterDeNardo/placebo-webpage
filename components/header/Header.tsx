@@ -37,9 +37,13 @@ type HeaderData = {
 
 const { leftNavigation, rightNavigation } = headerData as HeaderData;
 
-const Header = () => {
+type HeaderProps = {
+  hasHero?: boolean;
+};
+
+const Header = ({ hasHero = false }: HeaderProps = {}) => {
   const pathname = usePathname();
-  const isHomePage = pathname === '/';
+  const showTranslucentEffect = pathname === '/' || hasHero;
   
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isAuthOpen, setIsAuthOpen] = useState(false);
@@ -100,20 +104,20 @@ const Header = () => {
 
   return (
     <>
-      <header 
-        className={`fixed left-0 z-50 flex w-full items-center justify-between px-12 py-10 transition-all duration-300 ${
-          isHomePage
-            ? scrolled 
-              ? "bg-white/95 backdrop-blur-md border-b border-border/40 shadow-sm" 
-              : "bg-transparent border-b border-transparent"
-            : "bg-white border-b border-border/40 shadow-sm"
-        } ${
-          visible ? "top-0" : "-top-32"
-        }`}
-      >
+    <header 
+      className={`fixed left-0 z-50 flex w-full items-center justify-between px-12 py-10 transition-all duration-300 ${
+        showTranslucentEffect
+          ? scrolled 
+            ? "bg-white/95 backdrop-blur-md border-b border-border/40 shadow-sm" 
+            : "bg-transparent border-b border-transparent"
+          : "bg-white border-b border-border/40 shadow-sm"
+      } ${
+        visible ? "top-0" : "-top-32"
+      }`}
+    >
       {/* Navegação Esquerda */}
       <nav className={`flex gap-6 text-base transition-colors duration-300 ${
-        isHomePage
+        showTranslucentEffect
           ? scrolled ? "text-foreground" : "text-white drop-shadow-lg"
           : "text-foreground"
       }`}>
@@ -172,7 +176,7 @@ const Header = () => {
 
       {/* Logo Central */}
       <div className={`font-bold text-2xl absolute left-1/2 transform -translate-x-1/2 transition-colors duration-300 ${
-        isHomePage
+        showTranslucentEffect
           ? scrolled ? "text-foreground" : "text-white drop-shadow-lg"
           : "text-foreground"
       }`}>
@@ -183,7 +187,7 @@ const Header = () => {
 
       {/* Navegação Direita */}
       <nav className={`flex items-center gap-6 text-base transition-colors duration-300 ${
-        isHomePage
+        showTranslucentEffect
           ? scrolled ? "text-foreground" : "text-white drop-shadow-lg"
           : "text-foreground"
       }`}>

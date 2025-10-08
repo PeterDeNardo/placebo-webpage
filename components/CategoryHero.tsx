@@ -13,12 +13,12 @@ export default function CategoryHero({
   title,
   description,
   mediaType = "image",
-  mediaSrc = "https://picsum.photos/seed/category-default/1920/400",
+  mediaSrc = "https://picsum.photos/seed/category-default/1920/600",
   videoFormat = "video/mp4",
   posterImage = null,
 }: CategoryHeroProps) {
   return (
-    <div className="relative w-full h-[400px] flex items-center justify-center overflow-hidden">
+    <div className="relative w-full h-[600px] flex items-center justify-start overflow-hidden">
       {/* Background Media */}
       {mediaType === "video" ? (
         <video
@@ -46,12 +46,12 @@ export default function CategoryHero({
       <div className="absolute inset-0 bg-black/40" />
 
       {/* Content */}
-      <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 drop-shadow-lg">
+      <div className="relative z-10 text-left px-8 md:px-16 lg:px-24 max-w-4xl">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-3 drop-shadow-lg">
           {title}
         </h1>
         {description && (
-          <p className="text-lg md:text-xl text-white/90 drop-shadow-md max-w-2xl mx-auto">
+          <p className="text-base md:text-lg text-white/90 drop-shadow-md max-w-xl">
             {description}
           </p>
         )}

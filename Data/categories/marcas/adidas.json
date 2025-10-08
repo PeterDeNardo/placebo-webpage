@@ -1,5 +1,12 @@
 {
   "title": "Adidas",
+  "hero": {
+    "enabled": true,
+    "title": "Adidas",
+    "description": "Impossible is Nothing - Três listras que movem o mundo",
+    "mediaType": "image",
+    "mediaSrc": "https://picsum.photos/seed/adidas-hero/1920/600"
+  },
   "products": [
     {
       "id": "adidas-1",
