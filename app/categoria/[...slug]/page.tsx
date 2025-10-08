@@ -8,6 +8,7 @@ import CategoryHero from "@/components/CategoryHero";
 import ProductGrid from "@/components/ProductGrid";
 import ProductGridSkeleton from "@/components/ProductGridSkeleton";
 import EmptyState from "@/components/EmptyState";
+import FilterPanel from "@/components/FilterPanel";
 import { appConfig } from "@/config/app.config";
 
 type Product = {
@@ -40,6 +41,7 @@ export default function CategoryPage() {
   const slug = params.slug as string[];
   
   const [data, setData] = useState<CategoryData | null>(null);
+  const [filteredProducts, setFilteredProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
 
@@ -61,6 +63,7 @@ export default function CategoryPage() {
         try {
           const localData = await import(`@/Data/categories/${categoryPath}.json`);
           setData(localData.default);
+          setFilteredProducts(localData.default.products);
         } catch (err) {
           console.error("❌ Erro ao carregar dados locais:", err);
           setError(true);
@@ -79,6 +82,7 @@ export default function CategoryPage() {
 
           const result = await response.json();
           setData(result);
+          setFilteredProducts(result.products);
           console.log('✅ Categoria: Dados carregados com sucesso');
         } catch (err) {
           console.error("❌ Erro ao buscar da API:", err);
@@ -98,6 +102,10 @@ export default function CategoryPage() {
     setError(false);
     setLoading(true);
     window.location.reload();
+  };
+
+  const handleFilter = (filtered: Product[]) => {
+    setFilteredProducts(filtered);
   };
 
   return (
@@ -135,7 +143,7 @@ export default function CategoryPage() {
               />
             )}
             
-            {/* Products Grid */}
+            {/* Filtro e Products Grid */}
             {data.products.length === 0 ? (
               <div className={data.hero?.enabled ? "" : "pt-32"}>
                 <EmptyState
@@ -145,7 +153,25 @@ export default function CategoryPage() {
                 />
               </div>
             ) : (
-              <ProductGrid products={data.products} title={data.hero?.enabled ? undefined : data.title} />
+              <div className={`${data.hero?.enabled ? "pt-8 pb-16" : "pt-32 pb-16"} px-4 md:px-8`}>
+                {!data.hero?.enabled && (
+                  <h2 className="text-3xl font-bold mb-6">{data.title}</h2>
+                )}
+                
+                {/* Botão de Filtro */}
+                <FilterPanel 
+                  products={data.products} 
+                  onFilter={handleFilter} 
+                />
+                
+                {/* Grid de produtos */}
+                <ProductGrid 
+                  key={filteredProducts.length}
+                  products={filteredProducts} 
+                  title={undefined}
+                  showEmpty={filteredProducts.length === 0}
+                />
+              </div>
             )}
           </>
         )}

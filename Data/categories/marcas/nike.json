@@ -14,7 +14,12 @@
       "description": "Tênis clássico com tecnologia Air Max",
       "price": 699.90,
       "image": "https://picsum.photos/seed/nike1/400/500",
-      "route": "/product/nike-1"
+      "route": "/product/nike-1",
+      "filters": {
+        "category": "Calçados",
+        "color": "Branco",
+        "gender": "Unissex"
+      }
     },
     {
       "id": "nike-2",
@@ -22,7 +27,12 @@
       "description": "Camiseta esportiva com tecnologia Dri-FIT",
       "price": 129.90,
       "image": "https://picsum.photos/seed/nike2/400/500",
-      "route": "/product/nike-2"
+      "route": "/product/nike-2",
+      "filters": {
+        "category": "Camisetas",
+        "color": "Preto",
+        "gender": "Masculino"
+      }
     },
     {
       "id": "nike-3",
@@ -30,7 +40,12 @@
       "description": "Moletom com capuz e logo bordado",
       "price": 349.90,
       "image": "https://picsum.photos/seed/nike3/400/500",
-      "route": "/product/nike-3"
+      "route": "/product/nike-3",
+      "filters": {
+        "category": "Moletons",
+        "color": "Cinza",
+        "gender": "Unissex"
+      }
     },
     {
       "id": "nike-4",
@@ -38,7 +53,12 @@
       "description": "Tênis inspirado no basquete dos anos 80",
       "price": 449.90,
       "image": "https://picsum.photos/seed/nike4/400/500",
-      "route": "/product/nike-4"
+      "route": "/product/nike-4",
+      "filters": {
+        "category": "Calçados",
+        "color": "Preto",
+        "gender": "Masculino"
+      }
     },
     {
       "id": "nike-5",
@@ -46,7 +66,12 @@
       "description": "Legging esportiva de alta performance",
       "price": 199.90,
       "image": "https://picsum.photos/seed/nike5/400/500",
-      "route": "/product/nike-5"
+      "route": "/product/nike-5",
+      "filters": {
+        "category": "Calças",
+        "color": "Preto",
+        "gender": "Feminino"
+      }
     }
   ]
 }
