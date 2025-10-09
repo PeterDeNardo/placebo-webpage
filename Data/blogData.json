@@ -1,0 +1,122 @@
+{
+  "hero": {
+    "title": "Blog da Placebo",
+    "description": "Fique por dentro das últimas tendências, dicas de estilo e novidades da moda."
+  },
+  "posts": [
+    {
+      "id": "1",
+      "title": "As 5 Tendências de Moda para 2025",
+      "slug": "tendencias-moda-2025",
+      "image": "https://picsum.photos/seed/blog1/800/600",
+      "category": "Tendências",
+      "author": {
+        "name": "João Silva",
+        "avatar": "https://i.pravatar.cc/150?img=68"
+      },
+      "date": "15 de Outubro, 2024",
+      "readTime": "5 min de leitura",
+      "excerpt": "Descubra o que estará em alta no universo da moda no próximo ano, desde cores vibrantes até cortes inovadores.",
+      "featured": true
+    },
+    {
+      "id": "2",
+      "title": "Guia Completo: Como Escolher o Tênis Perfeito",
+      "slug": "guia-tenis-perfeito",
+      "image": "https://picsum.photos/seed/blog2/800/600",
+      "category": "Guias",
+      "author": {
+        "name": "Maria Oliveira",
+        "avatar": "https://i.pravatar.cc/150?img=27"
+      },
+      "date": "10 de Outubro, 2024",
+      "readTime": "8 min de leitura",
+      "excerpt": "Um bom par de tênis pode transformar seu look. Aprenda a escolher o modelo ideal para cada ocasião e estilo."
+    },
+    {
+      "id": "3",
+      "title": "Minimalismo na Moda: Menos é Mais?",
+      "slug": "minimalismo-na-moda",
+      "image": "https://picsum.photos/seed/blog3/800/600",
+      "category": "Estilo",
+      "author": {
+        "name": "Ana Costa",
+        "avatar": "https://i.pravatar.cc/150?img=45"
+      },
+      "date": "05 de Outubro, 2024",
+      "readTime": "6 min de leitura",
+      "excerpt": "Explore o conceito de minimalismo no vestuário e como ele pode simplificar sua vida e seu guarda-roupa."
+    },
+    {
+      "id": "4",
+      "title": "A História por Trás do Jeans",
+      "slug": "historia-do-jeans",
+      "image": "https://picsum.photos/seed/blog4/800/600",
+      "category": "História",
+      "author": {
+        "name": "Pedro Almeida",
+        "avatar": "https://i.pravatar.cc/150?img=12"
+      },
+      "date": "01 de Outubro, 2024",
+      "readTime": "7 min de leitura",
+      "excerpt": "Uma viagem no tempo para entender como o jeans se tornou um ícone da moda global e sua evolução ao longo dos anos."
+    },
+    {
+      "id": "5",
+      "title": "Como Cuidar das Suas Roupas para Durarem Mais",
+      "slug": "cuidar-roupas",
+      "image": "https://picsum.photos/seed/blog5/800/600",
+      "category": "Dicas",
+      "author": {
+        "name": "Sofia Mendes",
+        "avatar": "https://i.pravatar.cc/150?img=33"
+      },
+      "date": "28 de Setembro, 2024",
+      "readTime": "4 min de leitura",
+      "excerpt": "Dicas práticas para lavar, secar e guardar suas peças favoritas, garantindo que elas permaneçam como novas por mais tempo."
+    },
+    {
+      "id": "6",
+      "title": "Cores da Estação: Primavera/Verão 2025",
+      "slug": "cores-estacao-2025",
+      "image": "https://picsum.photos/seed/blog6/800/600",
+      "category": "Tendências",
+      "author": {
+        "name": "Carlos Ferreira",
+        "avatar": "https://i.pravatar.cc/150?img=51"
+      },
+      "date": "20 de Setembro, 2024",
+      "readTime": "5 min de leitura",
+      "excerpt": "Conheça a paleta de cores que dominará as passarelas e as ruas na próxima estação."
+    },
+    {
+      "id": "7",
+      "title": "Sustentabilidade na Moda: O Futuro é Verde",
+      "slug": "sustentabilidade-moda",
+      "image": "https://picsum.photos/seed/blog7/800/600",
+      "category": "Sustentabilidade",
+      "author": {
+        "name": "Beatriz Santos",
+        "avatar": "https://i.pravatar.cc/150?img=38"
+      },
+      "date": "15 de Setembro, 2024",
+      "readTime": "9 min de leitura",
+      "excerpt": "Entenda como a indústria da moda está se transformando para se tornar mais sustentável e como você pode contribuir."
+    },
+    {
+      "id": "8",
+      "title": "Street Style: Inspirações das Ruas",
+      "slug": "street-style-inspiracoes",
+      "image": "https://picsum.photos/seed/blog8/800/600",
+      "category": "Estilo",
+      "author": {
+        "name": "Rafael Lima",
+        "avatar": "https://i.pravatar.cc/150?img=15"
+      },
+      "date": "10 de Setembro, 2024",
+      "readTime": "6 min de leitura",
+      "excerpt": "Looks incríveis capturados nas ruas das principais capitais da moda mundial para inspirar seu próximo visual."
+    }
+  ]
+}
+
