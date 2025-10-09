@@ -1,0 +1,64 @@
+{
+  "items": [
+    {
+      "id": "cart-item-1",
+      "productId": "1",
+      "title": "Moletom Oversized Preto",
+      "description": "Moletom oversized com capuz, estilo urbano e confortável",
+      "image": "https://picsum.photos/seed/novidade1/400/500",
+      "price": 189.90,
+      "quantity": 1,
+      "color": "Preto",
+      "size": "M"
+    },
+    {
+      "id": "cart-item-2",
+      "productId": "4",
+      "title": "Tênis Urbano Preto",
+      "description": "Tênis casual com design moderno e confortável",
+      "image": "https://picsum.photos/seed/novidade4/400/500",
+      "price": 299.90,
+      "quantity": 2,
+      "color": "Preto",
+      "size": "42"
+    },
+    {
+      "id": "cart-item-3",
+      "productId": "7",
+      "title": "Camisa Social Preta",
+      "description": "Camisa social slim fit em tecido premium",
+      "image": "https://picsum.photos/seed/novidade7/400/500",
+      "price": 149.90,
+      "quantity": 1,
+      "color": "Preto",
+      "size": "G"
+    }
+  ],
+  "shippingOptions": [
+    {
+      "id": "standard",
+      "label": "Entrega Padrão",
+      "cost": 15.00,
+      "deliveryTime": "5-7 dias úteis"
+    },
+    {
+      "id": "express",
+      "label": "Entrega Expressa",
+      "cost": 30.00,
+      "deliveryTime": "2-3 dias úteis"
+    },
+    {
+      "id": "sameday",
+      "label": "Entrega no Mesmo Dia",
+      "cost": 50.00,
+      "deliveryTime": "Hoje"
+    }
+  ],
+  "summary": {
+    "subtotal": 839.70,
+    "shipping": 15.00,
+    "discount": 0.00,
+    "total": 854.70
+  }
+}
+
