@@ -14,12 +14,7 @@
       "description": "Moletom oversized com capuz, estilo urbano e confortável",
       "price": 189.90,
       "image": "https://picsum.photos/seed/novidade1/400/500",
-      "route": "/product/1",
-      "filters": {
-        "category": "Moletons",
-        "color": "Preto",
-        "brand": "Nike"
-      }
+      "route": "/product/1"
     },
     {
       "id": "2",
@@ -27,12 +22,7 @@
       "description": "Calça cargo com múltiplos bolsos, perfeita para o dia a dia",
       "price": 159.90,
       "image": "https://picsum.photos/seed/novidade2/400/500",
-      "route": "/product/2",
-      "filters": {
-        "category": "Calças",
-        "color": "Bege",
-        "brand": "Adidas"
-      }
+      "route": "/product/2"
     },
     {
       "id": "3",
@@ -40,12 +30,7 @@
       "description": "Camiseta 100% algodão, corte regular",
       "price": 79.90,
       "image": "https://picsum.photos/seed/novidade3/400/500",
-      "route": "/product/3",
-      "filters": {
-        "category": "Camisetas",
-        "color": "Branco",
-        "brand": "Puma"
-      }
+      "route": "/product/3"
     },
     {
       "id": "4",
@@ -53,12 +38,7 @@
       "description": "Tênis casual com design moderno e confortável",
       "price": 299.90,
       "image": "https://picsum.photos/seed/novidade4/400/500",
-      "route": "/product/4",
-      "filters": {
-        "category": "Calçados",
-        "color": "Preto",
-        "brand": "Nike"
-      }
+      "route": "/product/4"
     },
     {
       "id": "5",
@@ -66,12 +46,7 @@
       "description": "Jaqueta jeans clássica com lavagem escura",
       "price": 249.90,
       "image": "https://picsum.photos/seed/novidade5/400/500",
-      "route": "/product/5",
-      "filters": {
-        "category": "Jaquetas",
-        "color": "Azul",
-        "brand": "New Balance"
-      }
+      "route": "/product/5"
     },
     {
       "id": "6",
@@ -79,12 +54,7 @@
       "description": "Shorts confortável em moletom premium",
       "price": 89.90,
       "image": "https://picsum.photos/seed/novidade6/400/500",
-      "route": "/product/6",
-      "filters": {
-        "category": "Shorts",
-        "color": "Cinza",
-        "brand": "Adidas"
-      }
+      "route": "/product/6"
     },
     {
       "id": "7",
@@ -92,12 +62,7 @@
       "description": "Camisa social slim fit em tecido premium",
       "price": 149.90,
       "image": "https://picsum.photos/seed/novidade7/400/500",
-      "route": "/product/7",
-      "filters": {
-        "category": "Camisas",
-        "color": "Preto",
-        "brand": "Puma"
-      }
+      "route": "/product/7"
     },
     {
       "id": "8",
@@ -105,12 +70,7 @@
       "description": "Boné ajustável com aba reta",
       "price": 69.90,
       "image": "https://picsum.photos/seed/novidade8/400/500",
-      "route": "/product/8",
-      "filters": {
-        "category": "Acessórios",
-        "color": "Preto",
-        "brand": "Nike"
-      }
+      "route": "/product/8"
     }
   ]
 }

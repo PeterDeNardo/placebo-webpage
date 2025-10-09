@@ -6,6 +6,8 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { AuthService } from "@/services/auth.service";
+import { DELAYS } from "@/constants";
 
 type AuthModalProps = {
   isOpen: boolean;
@@ -31,7 +33,7 @@ export default function AuthModal({ isOpen, onClose, onLoginSuccess }: AuthModal
         setView("login");
         setError("");
         setTermsAccepted(false);
-      }, 300);
+      }, DELAYS.MODAL_CLOSE);
     }
     return () => {
       document.body.style.overflow = "unset";
@@ -60,25 +62,41 @@ export default function AuthModal({ isOpen, onClose, onLoginSuccess }: AuthModal
       }
     }
 
-    // Simula chamada API
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-
-    // TODO: Implementar chamada real ao backend
-    console.log(`${view}:`, data);
-
-    setLoading(false);
-
-    // Sucesso
-    if (view === "login" || view === "register") {
-      if (onLoginSuccess) {
-        onLoginSuccess();
-      }
-      onClose();
-    } else if (view === "forgot-password") {
-      setView("forgot-success");
-      setTimeout(() => {
+    try {
+      // Login
+      if (view === "login") {
+        await AuthService.login(data.email as string, data.password as string);
+        if (onLoginSuccess) {
+          onLoginSuccess();
+        }
         onClose();
-      }, 5000);
+      }
+      // Registro
+      else if (view === "register") {
+        await AuthService.register({
+          name: data.name as string,
+          email: data.email as string,
+          password: data.password as string,
+          phone: data.phone as string | undefined,
+        });
+        if (onLoginSuccess) {
+          onLoginSuccess();
+        }
+        onClose();
+      }
+      // Esqueci a senha
+      else if (view === "forgot-password") {
+        // Simula envio de email
+        await new Promise((resolve) => setTimeout(resolve, DELAYS.AUTH_SIMULATION));
+        setView("forgot-success");
+        setTimeout(() => {
+          onClose();
+        }, DELAYS.AUTO_CLOSE);
+      }
+    } catch (error) {
+      setError(error instanceof Error ? error.message : 'Erro ao processar solicitação');
+    } finally {
+      setLoading(false);
     }
   };
 

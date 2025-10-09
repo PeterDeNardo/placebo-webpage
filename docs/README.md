@@ -14,11 +14,6 @@ Bem-vindo à documentação completa do projeto Placebo Webpage.
   - Header translúcido
   - Transições suaves
   - Configuração e customização
-- [**FILTER_SYSTEM.md**](./FILTER_SYSTEM.md) - Sistema de Filtros de Produtos
-  - Filtros dinâmicos e automáticos
-  - Drawer lateral (gaveta)
-  - Estrutura de dados
-  - Customização
 
 ### 📡 Backend e API
 - [**API_ENDPOINTS.md**](./API_ENDPOINTS.md) - Documentação dos endpoints
@@ -104,30 +99,20 @@ placebo-webpage/
 - ✅ Cards responsivos
 - ✅ Imagens otimizadas (Next.js Image)
 
-### 3. Sistema de Filtros
-- ✅ Drawer lateral (menu gaveta)
-- ✅ Filtros dinâmicos automáticos
-- ✅ Filtro por preço (range slider)
-- ✅ Filtros por atributos (checkboxes)
-- ✅ Contador de filtros ativos
-- ✅ Estado vazio quando sem resultados
-
-**Documentação:** [FILTER_SYSTEM.md](./FILTER_SYSTEM.md)
-
-### 4. Header & Footer
+### 3. Header & Footer
 - ✅ Navegação fixa
 - ✅ Logo centralizado
 - ✅ Search overlay
 - ✅ Links institucionais
 - ✅ Redes sociais
 
-### 5. Estados da UI
+### 4. Estados da UI
 - ✅ **Loading:** Skeletons animados
 - ✅ **Success:** Renderização de conteúdo
 - ✅ **Error:** Mensagem + retry button
 - ✅ **Empty:** Mensagem quando não há dados
 
-### 6. Ambiente Inteligente
+### 5. Ambiente Inteligente
 - ✅ **Desenvolvimento:** Usa dados locais (JSON)
 - ✅ **Produção:** Busca da API
 - ✅ **Detecção automática** de ambiente

@@ -7,12 +7,7 @@
       "description": "Camiseta oversized em algodão premium",
       "price": 89.90,
       "image": "https://picsum.photos/seed/camiseta1/400/500",
-      "route": "/product/3",
-      "filters": {
-        "color": "Preto",
-        "size": "G",
-        "style": "Oversized"
-      }
+      "route": "/product/3"
     },
     {
       "id": "camiseta-2",
@@ -20,12 +15,7 @@
       "description": "Camiseta básica 100% algodão",
       "price": 79.90,
       "image": "https://picsum.photos/seed/camiseta2/400/500",
-      "route": "/product/camiseta-2",
-      "filters": {
-        "color": "Branco",
-        "size": "M",
-        "style": "Básica"
-      }
+      "route": "/product/camiseta-2"
     },
     {
       "id": "camiseta-3",
@@ -33,12 +23,7 @@
       "description": "Camiseta com estampa exclusiva",
       "price": 99.90,
       "image": "https://picsum.photos/seed/camiseta3/400/500",
-      "route": "/product/camiseta-3",
-      "filters": {
-        "color": "Multicolor",
-        "size": "G",
-        "style": "Estampada"
-      }
+      "route": "/product/camiseta-3"
     },
     {
       "id": "camiseta-4",
@@ -46,12 +31,7 @@
       "description": "Camiseta longline com corte alongado",
       "price": 109.90,
       "image": "https://picsum.photos/seed/camiseta4/400/500",
-      "route": "/product/camiseta-4",
-      "filters": {
-        "color": "Cinza",
-        "size": "GG",
-        "style": "Longline"
-      }
+      "route": "/product/camiseta-4"
     },
     {
       "id": "camiseta-5",
@@ -59,12 +39,7 @@
       "description": "Camiseta com listras horizontais",
       "price": 94.90,
       "image": "https://picsum.photos/seed/camiseta5/400/500",
-      "route": "/product/camiseta-5",
-      "filters": {
-        "color": "Azul",
-        "size": "M",
-        "style": "Listrada"
-      }
+      "route": "/product/camiseta-5"
     },
     {
       "id": "camiseta-6",
@@ -72,12 +47,7 @@
       "description": "Camiseta polo em algodão piquê",
       "price": 129.90,
       "image": "https://picsum.photos/seed/camiseta6/400/500",
-      "route": "/product/camiseta-6",
-      "filters": {
-        "color": "Azul",
-        "size": "G",
-        "style": "Polo"
-      }
+      "route": "/product/camiseta-6"
     }
   ]
 }
